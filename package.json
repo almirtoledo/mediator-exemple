@@ -9,6 +9,6 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "dev": "bun run --watch index.ts"
+    "dev": "bun run --watch src/infra/config/main.ts"
   }
 }

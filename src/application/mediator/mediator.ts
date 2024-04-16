@@ -1,5 +1,5 @@
-import type { Event } from "./event";
-import type { Handler } from "./handle";
+import type { Event } from "../../domain/event/event";
+import type { Handler } from "../handlers/handle";
 
 export class Mediator {
   private handlers: Map<string, Handler<any>> = new Map();
