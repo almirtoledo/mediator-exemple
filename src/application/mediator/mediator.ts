@@ -11,10 +11,7 @@ export class Mediator {
   }
 
   handle(eventName: string, event: Event<any>) {
-    for (const handler of this.handlers) {
-      if (handler[0] === eventName) {
-        handler[1].execute(event);
-      }
-    }
+    const handler = this.handlers.get(eventName);
+    if (handler) handler.execute(event);
   }
 }
