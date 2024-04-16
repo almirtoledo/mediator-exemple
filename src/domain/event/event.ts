@@ -3,8 +3,3 @@ export class Event<T> {
 
   constructor(readonly payload: T) {}
 }
-
-export interface DomainEvent<T> {
-  readonly eventName: string;
-  readonly payload: T;
-}
